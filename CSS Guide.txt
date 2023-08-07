@@ -1,0 +1,15 @@
+#Basic Structure_CSS# w3school = wbsite for reference / mozil developer network
+
+<link rel="stylesheet" href="IIOT.css">
+
+#selected tag {property:value;}# example h1{color:rgba(2,5,9,0-1)/#0895a8;}
+
+
+id = single element
+#nameofid
+
+classess = group of elements
+.nameofclass
+
+
+*{property:value) try to overide as much as possible

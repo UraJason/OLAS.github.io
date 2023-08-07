@@ -1,0 +1,96 @@
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    height: 100vh;
+    overflow: hidden;
+    background-color: #f0f2f5;
+    font-family: Helvetica, sans-serif;
+    
+}
+/* Start of Log in Page styling*/
+.LogIn-Container{
+    width: 400px;
+    height: 600px;
+
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.LogIn-Logo{
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.LogIn-form{
+    padding-top: 10px;
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    margin: 20px 0;
+    border-radius: 6px;
+    box-shadow: 0 3px 5px 2px rgba(150,150,150,0.2);
+    text-align: center;
+}
+.forgot{
+    background-color: f0f2f5;
+    text-align: center;
+}
+input{
+    width: 350px;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #d2d2d2;
+    border-radius: 6px;
+}
+input::placeholder{
+    font-size: 1.0rem;
+}
+input:focus::placeholder{
+    color: #c2c2c2;
+}
+.LogIn-button{
+    background-color: #2457a0;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px;
+    width: 382px;
+    border-radius: 6px;
+    border:0px;
+    transition-property: background-color;
+    transition-duration: 200ms;
+}
+.LogIn-button:hover{
+    background-color: rgb(40, 40, 107);
+    cursor: pointer;
+}
+.forgot:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #2457a0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+@media(min-width: 890px){
+    .LogIn-Container{
+        width: 90%;
+        max-width: 800px;
+        flex-direction: row;
+        padding-top: 70px;
+        justify-content: space-between;
+    }
+    .LogIn-Logo{
+        text-align: left;
+        width: 400px;
+    }
+}
+/*End of Log in Page styling*/
+/*Start Main Page styling*/
+
+
