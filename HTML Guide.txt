@@ -1,0 +1,59 @@
+#Basic Structure_HTML# w3school = wbsite for reference / mozil developer network
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <!-- comment -->
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+
+  </body>
+</html>
+
+#Tags#
+
+<h1></h1> = Heading Tag
+
+<strong></strong> = Bold Tag
+
+<em></em> = Italic Tag
+
+<ol><li></li></ol> = Ordered List Tag (Number)
+
+<ul><li></li></ul> = Unordered List (Bullet point)
+
+<div class="name"></div> = Division Tag (Grouping items/container) CSS
+
+<span></span> = Span Tag (isolate a words in an inline) CSS
+
+<img src="source of image(full path if not int same directory)" alt="(if missing the original image, show text"> Image tag (self closing tag) 
+
+<a href="file path">clickable link text or image, etc</a> = anchor tag, link differennt link
+
+#table Structure#
+
+<table border=""> table tag
+	<thread>
+		<th></th> Header
+	</thread>
+
+	<tr> table row
+		<td></td> cell value
+	<tr>
+<table>
+
+#Form#
+
+<form class="" action="index.html(after submit dito pupunta)" method="post/get"> </form>
+
+<label for="para kanino ang label na ito-id ng component"> text </label>
+<input id = "name of component" type="text/email/password/submit/color/radio" name="(use to link, example radio button)(input will be link here)" value="(pre-filled, with value)" placeholder ="description" required(required sya,attrib)> (inside of the form)
+
+
+<select class="" name=""> (drop down menu
+      <option value="">text</option>
+</select>
+
+<textarea name="name" rows="8" cols="80"></textarea>

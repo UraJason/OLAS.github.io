@@ -1,96 +1,348 @@
-*{
-    margin:0;
-    padding:0;
+* {
+  margin: 0;
+  padding: 0;
 }
-body{
-    height: 100vh;
-    overflow: hidden;
-    background-color: #f0f2f5;
-    font-family: Helvetica, sans-serif;
-    
+body {
+  height: 100vh;
+  overflow: hidden;
+  background-color: #f3f3f4;
+  font-family: Helvetica, sans-serif;
 }
 /* Start of Log in Page styling*/
-.LogIn-Container{
-    width: 400px;
-    height: 600px;
+.LogIn-Container {
+  width: 400px;
+  height: 600px;
 
-    margin: auto;
-    margin-top: 40px;
-    display: flex;
-    flex-direction: column;
+  margin: auto;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
 }
-.LogIn-Logo{
-    padding-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.LogIn-Logo {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.LogIn-form{
-    padding-top: 10px;
-    background-color: white;
+.LogIn-form {
+  padding-top: 10px;
+  background-color: white;
+  width: 400px;
+  height: 200px;
+  margin: 20px 0;
+  border-radius: 6px;
+  box-shadow: 0 3px 5px 2px rgba(150, 150, 150, 0.2);
+  text-align: center;
+}
+.forgot {
+  background-color: f0f2f5;
+  text-align: center;
+}
+
+.Pword {
+  width: 350px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+}
+.Uname {
+  width: 350px;
+  padding: 15px;
+  margin-bottom: 15px;
+  border: 1px solid #d2d2d2;
+  border-radius: 6px;
+}
+.Pword::placeholder {
+  font-size: 1rem;
+}
+.Pword:focus::placeholder {
+  color: #c2c2c2;
+}
+.Uname::placeholder {
+  font-size: 1rem;
+}
+.Uname:focus::placeholder {
+  color: #c2c2c2;
+}
+.LogIn-button {
+  background-color: #2457a0;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px;
+  width: 382px;
+  border-radius: 6px;
+  border: 0px;
+  transition-property: background-color;
+  transition-duration: 200ms;
+}
+.LogIn-button:hover {
+  background-color: rgb(40, 40, 107);
+  cursor: pointer;
+}
+.forgot:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #2457a0;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+@media (min-width: 890px) {
+  .LogIn-Container {
+    width: 90%;
+    max-width: 800px;
+    flex-direction: row;
+    padding-top: 70px;
+    justify-content: space-between;
+  }
+  .LogIn-Logo {
+    text-align: left;
     width: 400px;
-    height: 200px;
-    margin: 20px 0;
-    border-radius: 6px;
-    box-shadow: 0 3px 5px 2px rgba(150,150,150,0.2);
-    text-align: center;
-}
-.forgot{
-    background-color: f0f2f5;
-    text-align: center;
-}
-input{
-    width: 350px;
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #d2d2d2;
-    border-radius: 6px;
-}
-input::placeholder{
-    font-size: 1.0rem;
-}
-input:focus::placeholder{
-    color: #c2c2c2;
-}
-.LogIn-button{
-    background-color: #2457a0;
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    padding: 10px;
-    width: 382px;
-    border-radius: 6px;
-    border:0px;
-    transition-property: background-color;
-    transition-duration: 200ms;
-}
-.LogIn-button:hover{
-    background-color: rgb(40, 40, 107);
-    cursor: pointer;
-}
-.forgot:hover{
-    cursor: pointer;
-    text-decoration: underline;
-    color: #2457a0;
-}
-a{
-    text-decoration: none;
-    color: black;
-}
-@media(min-width: 890px){
-    .LogIn-Container{
-        width: 90%;
-        max-width: 800px;
-        flex-direction: row;
-        padding-top: 70px;
-        justify-content: space-between;
-    }
-    .LogIn-Logo{
-        text-align: left;
-        width: 400px;
-    }
+  }
 }
 /*End of Log in Page styling*/
 /*Start Main Page styling*/
 
+.BellowNav {
+  display: flex;
+}
 
+/*Start of Left Nav styling*/
+
+nav {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding-top: 1px;
+  padding-left: 15px;
+}
+.LeftNav {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+.ProfilePic {
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.Page-lefttab {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 10px;
+  font-size: 10px;
+}
+.LNBupper {
+  margin-left: 5px;
+  margin-top: 5px;
+  background-color: white;
+  padding-top: 10px;
+  width: 215px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  border-radius: 0px 5px 5px 0px;
+  font-size: 12px;
+}
+.LNBupperT {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+}
+.LNBupperT h1 {
+  color: #2457a0;
+}
+
+.LeftNavMainbody {
+  margin-left: 5px;
+  background-color: #3a6198;
+  margin-top: 5px;
+  padding-bottom: 10px;
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px 5px 5px 5px;
+  font-size: 12px;
+  flex: 1;
+}
+.Pen {
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.Pen p {
+  font-size: 18px;
+  padding-left: 15px;
+  color: white;
+}
+.Pen img {
+  padding-left: 5px;
+}
+.Pen:hover {
+  background-color: #2f507d;
+  cursor: pointer;
+  border-radius: 5px 5px 0px 0px;
+}
+.App {
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.App p {
+  font-size: 18px;
+  padding-left: 15px;
+  color: white;
+}
+.App img {
+  padding-left: 5px;
+}
+.App:hover {
+  background-color: #2f507d;
+  cursor: pointer;
+}
+
+.filter {
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.filter p {
+  font-size: 18px;
+  padding-left: 15px;
+  color: white;
+}
+.filter img {
+  padding-left: 5px;
+}
+.filter:hover {
+  background-color: #2f507d;
+  cursor: pointer;
+}
+
+.log {
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.log p {
+  font-size: 18px;
+  padding-left: 15px;
+  color: white;
+}
+.log img {
+  padding-left: 5px;
+}
+.log:hover {
+  background-color: #2f507d;
+  cursor: pointer;
+}
+
+.appr {
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+.appr p {
+  font-size: 18px;
+  padding-left: 15px;
+  color: white;
+}
+.appr img {
+  padding-left: 5px;
+}
+.appr:hover {
+  background-color: #2f507d;
+  cursor: pointer;
+}
+.apps {
+  display: none;
+}
+.apps label {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  margin-left: 40px;
+}
+.apps p {
+  font-size: 15px;
+  padding-left: 15px;
+  color: white;
+}
+.fils {
+  display: none;
+}
+.fils label {
+  display: flex;
+  align-items: center;
+  padding-top: 10px;
+  margin-left: 40px;
+}
+.fils p {
+  font-size: 15px;
+  padding-left: 15px;
+  color: white;
+}
+/*End of Left Nav styling*/
+
+/*Start of upper main styling*/
+
+.UpperMain {
+  display: flex;
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.Addapprover {
+  display: flex;
+  align-items: center;
+  background-color: #3a6198;
+  border-radius: 6px;
+  padding: 3px;
+  width: 148px;
+  height: 40px;
+}
+
+.Addapprover p {
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.CreateApproval {
+  width: 205px;
+  height: 40px;
+  margin-left: 30px;
+  padding: 3px;
+  display: flex;
+  align-items: center;
+  background-color: #3a6198;
+  border-radius: 6px;
+}
+
+.CreateApproval p {
+  color: white;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+.Addapprover:hover {
+  background-color: #197bbb;
+  cursor: pointer;
+}
+.CreateApproval:hover {
+  background-color: #197bbb;
+  cursor: pointer;
+}
+/*End Main Page styling*/
